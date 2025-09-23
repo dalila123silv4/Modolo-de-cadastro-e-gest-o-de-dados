@@ -9,7 +9,7 @@
 //     printf("ID: %d | Nome: %s | Idade: %d\n",
 //            cliente->id, cliente->nome, cliente->idade);
 // }
-
+//teste
 
 void exibir_cliente(const Cliente* cliente) {
     if (!cliente) {
@@ -47,7 +47,7 @@ Cliente ler_dados_cliente() {
     printf("Idade: "); scanf("%d", &c.idade);
     return c;  // retorna a struct preenchida
 }
-
+//fgets funçiona melhor que scanf para strings com espaços
 void ler_dados_atualizacao(char* nome, int* idade) {
     printf("Novo nome: "); scanf(" %[^\n]", nome);
     printf("Nova idade: "); scanf("%d", idade);
