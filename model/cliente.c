@@ -5,12 +5,10 @@
 
 // Cria e inicializa um cliente
 Cliente* criar_cliente(int id, const char* nome, int idade) {
-
     Cliente* novo = (Cliente*) malloc(sizeof(Cliente));
     if (!novo) {
         return NULL; // erro de memória
     }
-
     novo->id = id;
     strncpy(novo->nome, nome, sizeof(novo->nome));
     novo->idade = idade;
