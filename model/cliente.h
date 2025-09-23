@@ -10,6 +10,7 @@ typedef struct {
     int id;
     char nome[50];
     int idade;
+    
     // Aqui você pode expandir: adicionar CPF, email, endereço, telefone, etc.
 } Cliente;
 
