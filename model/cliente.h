@@ -19,13 +19,19 @@ typedef struct {
     // Aqui você pode expandir: adicionar CPF, email, endereço, telefone, etc.
 } Cliente;
 
+typedef struct{
+    Cliente conteudo;
+   struct ListaCliente* prox;
+}ListaCliente;
 
-
-// Funções do modelo (CRUD)
+//===============================================================================
+// funcoes do cliente
 Cliente* criar_cliente(int id, const char* nome, int idade);
 void atualizar_cliente(Cliente* cliente, const char* nome, int idade);
 void deletar_cliente(Cliente* cliente);
 
-
+//===============================================================================
+// funcoes da lista
+void 
 
 #endif
