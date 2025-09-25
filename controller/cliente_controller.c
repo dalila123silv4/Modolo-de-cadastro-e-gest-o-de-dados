@@ -19,39 +19,24 @@ void criarCliente(Cliente* cliente){
 void iniciar_sistema() { //lista-cliente
 
     
-    Cliente** cliente = NULL; //isso so serve para um cliente. temos que substitirur por lista 
+    ListaCliente** lista = NULL; //isso so serve para um cliente. temos que substitirur por lista 
     int opcao;
     //teste de commit
     do {
         opcao = exibir_menu();
         switch (opcao) {
             case 1: {
-                criarCliente(*cliente);
+                
                 break;
             }
             case 2: {
-                if (!cliente) {
-                    exibir_mensagem("Nenhum cliente cadastrado!");
-                } else {
-                    char nome[50];
-                    int idade;
-                    ler_dados_atualizacao(nome, &idade);
-                    atualizar_cliente(cliente, nome, idade);
-                    exibir_mensagem("Cliente atualizado!");
-                }
+                
                 break;
             }
             case 3:
-                exibir_cliente(cliente);
+                
                 break;
             case 4:
-                if (!cliente) {
-                    exibir_mensagem("Nenhum cliente para deletar!");
-                } else {
-                    deletar_cliente(cliente);
-                    cliente = NULL;
-                    exibir_mensagem("Cliente deletado!");
-                }
                 break;
             case 0:
                 exibir_mensagem("Saindo...");
@@ -61,5 +46,5 @@ void iniciar_sistema() { //lista-cliente
         }
     } while (opcao != 0);
 
-    if (cliente) deletar_cliente(cliente);
+    if (lista) deletar_cliente(lista);
 }
