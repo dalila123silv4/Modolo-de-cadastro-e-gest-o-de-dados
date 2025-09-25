@@ -25,7 +25,7 @@ void exibir_cliente(const Cliente* cliente) {
     printf("+--------------------------+\n");
 }
 
-
+//adiocionar na lista modifciar, remover da lista, modifcar, e atulaizar 
 
 int exibir_menu() {
     int opcao;
